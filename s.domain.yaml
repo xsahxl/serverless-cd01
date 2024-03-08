@@ -1,0 +1,16 @@
+edition: 1.0.0
+name: serverless-cd
+access: default
+
+# 如果如果日志过期可以修改配置，参考：http://www.devsapp.cn/details.html?name=domain
+# 然后运行 s get -t s.domain.yaml
+
+services:
+  worker:
+    component: domain
+    props:
+      type: fc
+      user: 1694024725952210
+      region: ap-southeast-1
+      service: serverless-cd
+      function: auto

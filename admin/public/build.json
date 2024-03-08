@@ -1,0 +1,28 @@
+{
+  "router": {
+    "lazy": true
+  },
+  "publicPath": "/build/",
+  "externals": {
+    "moment": "moment",
+    "react": "React",
+    "../moment": "moment",
+    "lodash": "_",
+    "codemirror": "CodeMirror",
+    "react-dom": "ReactDOM"
+  },
+  "plugins": [
+    [
+      "build-plugin-moment-locales",
+      {
+        "locales": ["zh-cn"]
+      }
+    ]
+  ],
+  "proxy": {
+    "/api": {
+      "enable": true,
+      "target": "http://0.0.0.0:9000"
+    }
+  }
+}

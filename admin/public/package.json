@@ -1,0 +1,53 @@
+{
+  "name": "@serverless-cd/console",
+  "version": "0.1.0",
+  "description": "轻量级模板，使用 TypeScript，仅包含基础的 Layout。",
+  "dependencies": {
+    "@alicloud/console-components": "^1.5.10",
+    "@alicloud/console-components-actions": "^1.0.19",
+    "@alicloud/console-components-slide-panel": "^2.2.14",
+    "@alifd/theme-design-pro": "^0.8.1",
+    "@serverless-cd/app-card-ui": "^0.0.2",
+    "@serverless-cd/auth-ui": "^0.0.1-beta-7",
+    "@serverless-cd/creating-ui": "^0.0.3",
+    "@serverless-cd/trigger-ui": "^0.0.21",
+    "@serverless-cd/variable-ui": "^0.0.3",
+    "ansi-to-html": "^0.7.2",
+    "build-plugin-moment-locales": "^0.1.0",
+    "codemirror": "^5.65.10",
+    "ice.js": "^2.0.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.24.0",
+    "react": "^17.0.2",
+    "react-codemirror2": "^7.2.1",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^17.0.2",
+    "react-toastify": "^9.0.8",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@iceworks/spec": "^1.0.0",
+    "@types/js-yaml": "^4.0.5",
+    "@types/lodash": "^4.14.184",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "@types/styled-components": "^5.1.26",
+    "build-plugin-ignore-style": "^0.1.0",
+    "eslint": "^7.30.0",
+    "stylelint": "^13.2.0"
+  },
+  "scripts": {
+    "start": "npx icejs start",
+    "build": "npx icejs build",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Serverless-Devs/serverless-cd"
+  },
+  "private": true
+}
